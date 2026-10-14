@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudo Escalado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Estudo Escalado</h1>
+      <p class="subtitle">Do mais difícil ao mais estimulante — princípio de Premack aplicado à sua rotina.</p>
+      <div class="streak">
+        🔥 <span id="streak-count">0</span> dias seguidos
+      </div>
+    </header>
+
+    <section class="add-task">
+      <input type="text" id="task-name" placeholder="Nome da tarefa">
+      <select id="task-level">
+        <option value="1">1 - Muito chato/difícil</option>
+        <option value="2">2 - Chato</option>
+        <option value="3">3 - Neutro</option>
+        <option value="4">4 - Estimulante</option>
+        <option value="5">5 - Muito estimulante (recompensa)</option>
+      </select>
+      <button id="add-btn">Adicionar</button>
+    </section>
+
+    <section class="plan">
+      <h2>Plano de hoje</h2>
+      <ul id="task-list"></ul>
+    </section>
+
+    <button id="finish-btn" class="finish-btn">Concluí o plano de hoje</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
